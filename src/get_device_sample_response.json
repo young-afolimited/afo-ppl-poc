@@ -1,0 +1,505 @@
+{
+    "device_id": "Aid-80010003-0000-2000-9002-00000000026b",
+    "description": "",
+    "device_name": "Belv_Takumi_13101310",
+    "internal_device_id": "7805bb40-2ac9-11f0-a36d-2925365d6d52",
+    "device_type": "SZP123S-001",
+    "ins_id": "ProvisionDeviceHandler",
+    "ins_date": "2025-05-06T22:28:44.088455+00:00",
+    "upd_id": "ProvisionDeviceHandler",
+    "upd_date": "2025-05-20T20:00:45.604248+00:00",
+    "connection_state": "Connected",
+    "last_activity_time": "2025-07-05T06:12:55.545000+00:00",
+    "inactivity_timeout": 300,
+    "models": [
+        {
+            "model_id": "BB_cocoPerson",
+            "model_version_id": "0314150251420100"
+        }
+    ],
+    "modules": [
+        {
+            "module_id": "b8d57d00-ba85-4fd0-b78a-4908bde744a5",
+            "module_name": "EdgeApp_6682_1",
+            "app_name": "edge_app_od_v2",
+            "app_version": "1.0.0",
+            "property": {
+                "configuration": {
+                    "edge_app": {
+                        "req_info": {
+                            "req_id": "664d0daf-a7b2-46c0-b2a7-451428292059"
+                        },
+                        "common_settings": {
+                            "log_level": 1,
+                            "pq_settings": {
+                                "frame_rate": {
+                                    "num": 2997,
+                                    "denom": 100
+                                },
+                                "digital_zoom": 1,
+                                "auto_exposure": {
+                                    "max_gain": 51,
+                                    "convergence_speed": 2,
+                                    "max_exposure_time": 10000,
+                                    "min_exposure_time": 100
+                                },
+                                "exposure_mode": 0,
+                                "image_cropping": {
+                                    "top": 0,
+                                    "left": 0,
+                                    "width": 2028,
+                                    "height": 1520
+                                },
+                                "image_rotation": 0,
+                                "ev_compensation": 0,
+                                "manual_exposure": {
+                                    "gain": 0,
+                                    "exposure_time": 10000
+                                },
+                                "register_access": [
+                                    {
+                                        "id": 0,
+                                        "data": "123",
+                                        "address": "AB54A98CEB1F0AD2",
+                                        "bit_length": 0
+                                    },
+                                    {
+                                        "id": 0,
+                                        "data": "12345",
+                                        "address": "AB54A98EEE391EEA",
+                                        "bit_length": 1
+                                    }
+                                ],
+                                "camera_image_flip": {
+                                    "flip_vertical": 0,
+                                    "flip_horizontal": 0
+                                },
+                                "camera_image_size": {
+                                    "width": 2028,
+                                    "height": 1520,
+                                    "scaling_policy": 1
+                                },
+                                "auto_white_balance": {
+                                    "convergence_speed": 6
+                                },
+                                "white_balance_mode": 0,
+                                "ae_anti_flicker_mode": 0,
+                                "auto_exposure_metering": {
+                                    "top": 0,
+                                    "left": 0,
+                                    "right": 0,
+                                    "bottom": 0,
+                                    "metering_mode": 0
+                                },
+                                "manual_white_balance_preset": {
+                                    "color_temperature": 0
+                                }
+                            },
+                            "port_settings": {
+                                "metadata": {
+                                    "path": "",
+                                    "method": 0,
+                                    "enabled": true,
+                                    "endpoint": "",
+                                    "storage_name": ""
+                                },
+                                "input_tensor": {
+                                    "path": "Aid-80010003-0000-2000-9002-00000000026b/image/20250704221258",
+                                    "method": 1,
+                                    "enabled": true,
+                                    "endpoint": "",
+                                    "storage_name": "00g4anlhvspjb85kx697"
+                                }
+                            },
+                            "process_state": 2,
+                            "codec_settings": {
+                                "format": 1
+                            },
+                            "inference_settings": {
+                                "number_of_iterations": 0
+                            },
+                            "number_of_inference_per_message": 1
+                        },
+                        "custom_settings": {
+                            "ai_models": {
+                                "detection": {
+                                    "parameters": {
+                                        "threshold": 0.2,
+                                        "input_width": 320,
+                                        "input_height": 320,
+                                        "max_detections": 10
+                                    },
+                                    "ai_model_bundle_id": "025142"
+                                }
+                            },
+                            "metadata_settings": {
+                                "format": 0
+                            }
+                        }
+                    }
+                },
+                "state": {
+                    "edge_app": {
+                        "res_info": {
+                            "code": 3,
+                            "res_id": "664d0daf-a7b2-46c0-b2a7-451428292059",
+                            "detail_msg": "Register access property failed to be set. Please use valid values for bit_length, id, address and data."
+                        },
+                        "common_settings": {
+                            "process_state": 2,
+                            "log_level": 1,
+                            "inference_settings": {
+                                "number_of_iterations": 0
+                            },
+                            "pq_settings": {
+                                "camera_image_size": {
+                                    "width": 2028,
+                                    "height": 1520,
+                                    "scaling_policy": 1
+                                },
+                                "camera_image_flip": {
+                                    "flip_horizontal": 0,
+                                    "flip_vertical": 0
+                                },
+                                "digital_zoom": 1,
+                                "exposure_mode": 0,
+                                "auto_exposure": {
+                                    "max_exposure_time": 10000,
+                                    "min_exposure_time": 100,
+                                    "max_gain": 51,
+                                    "convergence_speed": 2
+                                },
+                                "auto_exposure_metering": {
+                                    "metering_mode": 0,
+                                    "top": 0,
+                                    "left": 0,
+                                    "bottom": 0,
+                                    "right": 0
+                                },
+                                "ev_compensation": 0,
+                                "ae_anti_flicker_mode": 0,
+                                "manual_exposure": {
+                                    "exposure_time": 10000,
+                                    "gain": 0
+                                },
+                                "frame_rate": {
+                                    "num": 2997,
+                                    "denom": 100
+                                },
+                                "white_balance_mode": 0,
+                                "auto_white_balance": {
+                                    "convergence_speed": 6
+                                },
+                                "manual_white_balance_preset": {
+                                    "color_temperature": 0
+                                },
+                                "image_cropping": {
+                                    "left": 0,
+                                    "top": 0,
+                                    "width": 2028,
+                                    "height": 1520
+                                },
+                                "image_rotation": 0,
+                                "register_access": []
+                            },
+                            "port_settings": {
+                                "metadata": {
+                                    "method": 0,
+                                    "storage_name": "",
+                                    "endpoint": "",
+                                    "path": "",
+                                    "enabled": true
+                                },
+                                "input_tensor": {
+                                    "method": 1,
+                                    "storage_name": "00g4anlhvspjb85kx697",
+                                    "endpoint": "",
+                                    "path": "Aid-80010003-0000-2000-9002-00000000026b/image/20250704221258",
+                                    "enabled": true
+                                }
+                            },
+                            "codec_settings": {
+                                "format": 1
+                            },
+                            "number_of_inference_per_message": 1
+                        },
+                        "custom_settings": {
+                            "ai_models": {
+                                "detection": {
+                                    "parameters": {
+                                        "threshold": 0.2,
+                                        "input_width": 320,
+                                        "input_height": 320,
+                                        "max_detections": 10
+                                    },
+                                    "ai_model_bundle_id": "025142"
+                                }
+                            },
+                            "metadata_settings": {
+                                "format": 0
+                            },
+                            "res_info": {
+                                "code": 0,
+                                "res_id": "664d0daf-a7b2-46c0-b2a7-451428292059",
+                                "detail_msg": ""
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "property": {
+        "state": {
+            "device_states": {
+                "power_states": {
+                    "source": [
+                        {
+                            "type": 0,
+                            "level": 100
+                        }
+                    ],
+                    "in_use": 0,
+                    "is_battery_low": false
+                },
+                "process_state": "Idle",
+                "hours_meter": 1106,
+                "bootup_reason": 0,
+                "last_bootup_time": "2025-07-03T23:35:50.474Z"
+            },
+            "device_info": {
+                "device_manifest": "eyJhbGciOiJFUzI1NiIsImtpZCI6IjAwMDAwMDAxLTY0MWMtMjYxYS05MDA0LTI1NmNmZTBjY2NlMToxIiwidHlwIjoiSldUIn0.eyJpYXQiOjE3MTQ0OTUyNzksIkFJVFJJT1NDZXJ0VVVJRCI6IkFpZC04MDAxMDAwMy0wMDAwLTIwMDAtOTAwMi0wMDAwMDAwMDAyNmIiLCJzZW5zb3JJZCI6InNpZC0xMDBBNTA1MDBBMjAxMDA4NTM2NDAxMjAwMDAwMDAwMCJ9.ahd9VdDX50ZR9eeXFg-jT_RNB6kw7zY_-K7Q-LKIG1bEfanb_Dg5HYxDWJNLJoREZnt_P2xvz2rxhF9VctzoHg",
+                "chips": [
+                    {
+                        "name": "main_chip",
+                        "id": "",
+                        "hardware_version": "",
+                        "temperature": 0,
+                        "loader_version": "010301",
+                        "loader_hash": "",
+                        "update_date_loader": "",
+                        "firmware_version": "1.0.8",
+                        "firmware_hash": "",
+                        "update_date_firmware": "2025-05-01T21:00:50.000Z",
+                        "ai_models": []
+                    },
+                    {
+                        "name": "sensor_chip",
+                        "id": "100A50500A2010085364012000000000",
+                        "hardware_version": "1",
+                        "temperature": 58,
+                        "loader_version": "020301",
+                        "loader_hash": "",
+                        "update_date_loader": "",
+                        "firmware_version": "020401",
+                        "firmware_hash": "",
+                        "update_date_firmware": "",
+                        "ai_models": [
+                            {
+                                "version": "0314150251420100",
+                                "hash": "zoZUdWWtikpu3LsU1Up+MavP5lgkBCquW3ieAswO18M=",
+                                "update_date": "2025-05-20T20:58:31.000Z"
+                            },
+                            {
+                                "version": "",
+                                "hash": "",
+                                "update_date": ""
+                            },
+                            {
+                                "version": "",
+                                "hash": "",
+                                "update_date": ""
+                            },
+                            {
+                                "version": "",
+                                "hash": "",
+                                "update_date": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "PRIVATE_deploy_ai_model": {
+                "req_info": {
+                    "req_id": "6681"
+                },
+                "targets": [
+                    {
+                        "chip": "sensor_chip",
+                        "package_url": "https://stdatascssprodprodus.blob.core.windows.net/deploy/6681/Aid-80010003-0000-2000-9002-00000000026b/network1.fpk?se=2025-05-20T23%3A57%3A45Z&sp=r&sv=2021-08-06&sr=b&sig=5hWgYGP08nD3LFrztMAwBpa%2B8mgHU9riVPVxCtGXyGU%3D",
+                        "version": "0314150251420100",
+                        "hash": "zoZUdWWtikpu3LsU1Up+MavP5lgkBCquW3ieAswO18M=",
+                        "size": 3198954,
+                        "progress": 100,
+                        "process_state": "done"
+                    }
+                ],
+                "res_info": {
+                    "res_id": "6681",
+                    "code": 0,
+                    "detail_msg": "ok"
+                }
+            },
+            "device_capabilities": {
+                "is_battery_supported": false,
+                "supported_wireless_mode": 3,
+                "is_periodic_supported": false,
+                "is_sensor_postprocess_supported": true
+            },
+            "system_settings": {
+                "req_info": {
+                    "req_id": ""
+                },
+                "led_enabled": true,
+                "temperature_update_interval": 10,
+                "log_settings": [
+                    {
+                        "filter": "main",
+                        "level": 3,
+                        "destination": 0,
+                        "storage_name": "",
+                        "path": ""
+                    },
+                    {
+                        "filter": "sensor",
+                        "level": 3,
+                        "destination": 0,
+                        "storage_name": "",
+                        "path": ""
+                    },
+                    {
+                        "filter": "companion_fw",
+                        "level": 3,
+                        "destination": 0,
+                        "storage_name": "",
+                        "path": ""
+                    },
+                    {
+                        "filter": "companion_app",
+                        "level": 3,
+                        "destination": 0,
+                        "storage_name": "",
+                        "path": ""
+                    }
+                ],
+                "res_info": {
+                    "res_id": "",
+                    "code": 0,
+                    "detail_msg": "ok"
+                }
+            },
+            "wireless_setting": {
+                "req_info": {
+                    "req_id": ""
+                },
+                "sta_mode_setting": {
+                    "ssid": "",
+                    "password": "",
+                    "encryption": 0
+                },
+                "res_info": {
+                    "res_id": "",
+                    "code": 0,
+                    "detail_msg": "ok"
+                }
+            },
+            "PRIVATE_reserved": {
+                "schema": "dtmi:com:sony_semicon:aitrios:sss:edge:system:t3p;2"
+            },
+            "PRIVATE_endpoint_settings": {
+                "req_info": {
+                    "req_id": ""
+                },
+                "endpoint_url": "mqtt-evp-hub-us.aitrios.sony-semicon.com",
+                "endpoint_port": 8883,
+                "protocol_version": "TB",
+                "res_info": {
+                    "res_id": "",
+                    "code": 0,
+                    "detail_msg": "ok"
+                }
+            },
+            "periodic_setting": {
+                "req_info": {
+                    "req_id": ""
+                },
+                "operation_mode": 0,
+                "recovery_method": 0,
+                "interval_settings": [
+                    {
+                        "base_time": "00.00",
+                        "capture_interval": 120,
+                        "config_interval": 240
+                    },
+                    {
+                        "base_time": "00.00",
+                        "capture_interval": 120,
+                        "config_interval": 240
+                    }
+                ],
+                "ip_addr_setting": "dhcp",
+                "res_info": {
+                    "res_id": "",
+                    "code": 0,
+                    "detail_msg": "ok"
+                }
+            },
+            "network_settings": {
+                "req_info": {
+                    "req_id": ""
+                },
+                "ip_method": 0,
+                "ntp_url": "us.pool.ntp.org",
+                "static_settings_ipv6": {
+                    "ip_address": "",
+                    "subnet_mask": "",
+                    "gateway_address": "",
+                    "dns_address": ""
+                },
+                "static_settings_ipv4": {
+                    "ip_address": "",
+                    "subnet_mask": "",
+                    "gateway_address": "",
+                    "dns_address": ""
+                },
+                "proxy_settings": {
+                    "proxy_url": "",
+                    "proxy_port": 0,
+                    "proxy_user_name": "",
+                    "proxy_password": ""
+                },
+                "res_info": {
+                    "res_id": "",
+                    "code": 0,
+                    "detail_msg": "ok"
+                }
+            }
+        },
+        "configuration": {
+            "PRIVATE_deploy_ai_model": {
+                "targets": [
+                    {
+                        "chip": "sensor_chip",
+                        "hash": "zoZUdWWtikpu3LsU1Up+MavP5lgkBCquW3ieAswO18M=",
+                        "size": 3198954,
+                        "version": "0314150251420100",
+                        "package_url": "https://stdatascssprodprodus.blob.core.windows.net/deploy/6681/Aid-80010003-0000-2000-9002-00000000026b/network1.fpk?se=2025-05-20T23%3A57%3A45Z&sp=r&sv=2021-08-06&sr=b&sig=5hWgYGP08nD3LFrztMAwBpa%2B8mgHU9riVPVxCtGXyGU%3D"
+                    }
+                ],
+                "req_info": {
+                    "req_id": "6681"
+                }
+            }
+        }
+    },
+    "device_groups": [
+        {
+            "device_group_id": "SEA",
+            "description": "",
+            "ins_id": "00u3d9a0ueudDZKV6697",
+            "ins_date": "2023-03-07T22:27:30.821646+00:00",
+            "upd_id": "00us30jpu7fE02T9K697",
+            "upd_date": "2025-07-04T01:33:08.265045+00:00"
+        }
+    ]
+}

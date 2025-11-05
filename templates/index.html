@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="tab-pane fade {% if tab == 'devices' %}show active{% endif %}" id="devices">
+    {% include "partials/device_management.html" %}
+</div>
+<div class="tab-pane fade {% if tab == 'project' %}show active{% endif %}" id="project">
+    {% include "partials/project_settings.html" %}
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+<h3>Device Management</h3>
+
+<!-- Configure Modal -->
+<div class="modal fade" id="configureModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Configure Device</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="configureFormContainer">
+            <!-- Form will be inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="submitConfiguration()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!-- Preview Modal -->
+<div class="modal fade" id="previewModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Live Preview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="stopPreview()"></button>
+            </div>
+                <div class="modal-body text-center">
+                <img id="previewImage" class="img-fluid" src="" alt="Live preview">
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!-- Confirmation Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalTitle">Confirm Action</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="confirmModalBody">
+                Are you sure?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" id="confirmActionBtn">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-4 d-flex gap-2">
+    <select id="newDeviceId" class="form-select">
+        <option disabled selected>Choose a device</option>
+    </select>
+    <button class="btn btn-success" onclick="addDevice()">Add Device</button>
+    <button class="btn btn-outline-primary" onclick="refreshDeviceList()">Refresh Device List</button>
+</div>
+
+<table class="table align-middle table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Device Group</th>
+            <th>Device Name</th>
+            <th>Device ID</th>
+            <th>Connection Status</th>
+            <th>Last Polled</th>
+            <th>Last Person Detected</th>
+            <th>Inference</th>
+            <th>Notifications</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody id="device-table-body">
+        <!-- Table rows will be rendered by JS -->
+    </tbody>
+</table>
+
+<script src="{{ url_for('static', filename='device_management.js') }}"></script>

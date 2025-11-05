@@ -1,0 +1,114 @@
+{
+  "edge_app": {
+    "req_info": {
+      "req_id": "6ce9fca1-0e19-4b1b-b5d2-8bbaad771d1f"
+    },
+    "common_settings": {
+      "log_level": 1,
+      "pq_settings": {
+        "frame_rate": {
+          "num": 2997,
+          "denom": 100
+        },
+        "digital_zoom": 1,
+        "auto_exposure": {
+          "max_gain": 51,
+          "convergence_speed": 2,
+          "max_exposure_time": 10000,
+          "min_exposure_time": 100
+        },
+        "exposure_mode": 0,
+        "image_cropping": {
+          "top": 0,
+          "left": 0,
+          "width": 2028,
+          "height": 1520
+        },
+        "image_rotation": 0,
+        "ev_compensation": 0,
+        "manual_exposure": {
+          "gain": 0,
+          "exposure_time": 10000
+        },
+        "register_access": [
+          {
+            "id": 0,
+            "data": "123",
+            "address": "AB54A98CEB1F0AD2",
+            "bit_length": 0
+          },
+          {
+            "id": 0,
+            "data": "12345",
+            "address": "AB54A98EEE391EEA",
+            "bit_length": 1
+          }
+        ],
+        "camera_image_flip": {
+          "flip_vertical": 0,
+          "flip_horizontal": 0
+        },
+        "camera_image_size": {
+          "width": 2028,
+          "height": 1520,
+          "scaling_policy": 1
+        },
+        "auto_white_balance": {
+          "convergence_speed": 6
+        },
+        "white_balance_mode": 0,
+        "ae_anti_flicker_mode": 0,
+        "auto_exposure_metering": {
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "metering_mode": 0
+        },
+        "manual_white_balance_preset": {
+          "color_temperature": 0
+        }
+      },
+      "port_settings": {
+        "metadata": {
+          "path": "",
+          "method": 0,
+          "enabled": true,
+          "endpoint": "",
+          "storage_name": ""
+        },
+        "input_tensor": {
+          "path": "Aid-80010003-0000-2000-9002-00000000026b/image/20250704221258",
+          "method": 1,
+          "enabled": true,
+          "endpoint": "",
+          "storage_name": "00g4anlhvspjb85kx697"
+        }
+      },
+      "process_state": 2,
+      "codec_settings": {
+        "format": 1
+      },
+      "inference_settings": {
+        "number_of_iterations": 0
+      },
+      "number_of_inference_per_message": 1
+    },
+    "custom_settings": {
+      "ai_models": {
+        "detection": {
+          "parameters": {
+            "threshold": 0.2,
+            "input_width": 320,
+            "input_height": 320,
+            "max_detections": 10
+          },
+          "ai_model_bundle_id": "025142"
+        }
+      },
+      "metadata_settings": {
+        "format": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<h3>Project Settings</h3>
+<div id="projectSettingsForm">
+    <fieldset>
+        <legend>AITRIOS</legend>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Portal Endpoint</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="portal_endpoint" value="{{ settings.get('aitrios', {}).get('portal_endpoint', '') }}">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Console Endpoint</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="console_endpoint" value="{{ settings.get('aitrios', {}).get('console_endpoint', '') }}">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Client ID</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="client_id" value="{{ settings.get('aitrios', {}).get('client_id', '') }}">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Client Secret</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="client_secret" value="{{ settings.get('aitrios', {}).get('client_secret', '') }}">
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Email Settings</legend>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Sender Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="sender_email" value="{{ settings.get('email', {}).get('sender_email', '') }}">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Receiver Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="receiver_email" value="{{ settings.get('email', {}).get('receiver_email', '') }}">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Azure Communication Connection String</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="azure_connection_string" value="{{ settings.get('email', {}).get('azure_connection_string', '') }}">
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">Default Inactivity Timer (minutes)</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="inactivity_timer" value="{{ settings.get('inactivity_timer', '5') }}">
+        </div>
+    </div>
+    
+    <button class="btn btn-primary" onclick="saveProjectSettings()">Save Settings</button>
+    <button class="btn btn-primary" onclick="loadConfigFile()">Load Config File</button>
+</div>
+
+<script src="{{ url_for('static', filename='project_settings.js') }}"></script>

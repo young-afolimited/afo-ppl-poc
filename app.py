@@ -5,6 +5,8 @@ import json
 import base64
 from datetime import datetime, timedelta
 from src.azure_email import EmailService
+from settings_loader import load_settings
+settings = load_settings()
 
 from src.utils import (
     SETTINGS_PATH, SELECTED_DEVICES_PATH, DEVICE_LIST_PATH, TOKEN_PATH,

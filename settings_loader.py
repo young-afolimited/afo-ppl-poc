@@ -2,6 +2,7 @@
 import os, json
 from pathlib import Path
 
+
 def load_settings():
     p = Path("data/settings.json")
     if p.exists():
